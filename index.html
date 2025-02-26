@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JL</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <script src="script.js" defer></script> <!-- Use defer to ensure the script loads after the DOM -->
+    <style>
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url('images/town.gif');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+.top-margin {
+    margin-top: 1.5in;
+    width: 100%;
+    border-top: 2px solid white; /* White line at the top */
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0 5in; /* 1.5 inch margin on left and right */
+    gap: 0.5in; /* 0.5 inch gap between boxes */
+}
+
+.bottom-margin {
+    margin-bottom: 1in;
+    width: 100%;
+    border-top: 2px solid white; 
+}
+
+
+.box1 {
+    background: linear-gradient(to bottom right, rgba(100, 100, 255, 0.8), rgba(0, 0, 255, 0.8)); /* Gradient color */
+    border-radius: 15px; /* Rounded corners */
+    width: 3in; /* Box width */
+    height: 3in; /* Box height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white; /* Text color */
+    font-size: 1.5rem; /* Text size */
+    text-decoration: none; /* Remove underline from links */
+    position: relative; /* For hover effect */
+    overflow: hidden; /* Hide overflow for the fade effect */
+    transition: background 1.5s ease; /* Smooth transition for background */
+}
+
+
+.box2 {
+    background: linear-gradient(to bottom right, rgba(100, 100, 255, 0.8), rgba(0, 0, 255, 0.8)); /* Gradient color */
+    border-radius: 15px; /* Rounded corners */
+    width: 3in; /* Box width */
+    height: 3in; /* Box height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white; /* Text color */
+    font-size: 1.5rem; /* Text size */
+    text-decoration: none; /* Remove underline from links */
+    position: relative; /* For hover effect */
+    overflow: hidden; /* Hide overflow for the fade effect */
+    transition: background 1.5s ease; /* Smooth transition for background */
+}
+
+
+.box3 {
+    background: linear-gradient(to bottom right, rgba(100, 100, 255, 0.8), rgba(0, 0, 255, 0.8)); /* Gradient color */
+    border-radius: 15px; /* Rounded corners */
+    width: 3in; /* Box width */
+    height: 3in; /* Box height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white; /* Text color */
+    font-size: 1.5rem; /* Text size */
+    text-decoration: none; /* Remove underline from links */
+    position: relative; /* For hover effect */
+    overflow: hidden; /* Hide overflow for the fade effect */
+    transition: background 1.5s ease; /* Smooth transition for background */
+}
+
+
+
+.box4 {
+    background: linear-gradient(to bottom right, rgba(100, 100, 255, 0.8), rgba(0, 0, 255, 0.8)); /* Gradient color */
+    border-radius: 15px; /* Rounded corners */
+    width: 3in; /* Box width */
+    height: 3in; /* Box height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white; /* Text color */
+    font-size: 1.5rem; /* Text size */
+    text-decoration: none; /* Remove underline from links */
+    position: relative; /* For hover effect */
+    overflow: hidden; /* Hide overflow for the fade effect */
+    transition: background 1.5s ease; /* Smooth transition for background */
+}
+
+
+.box5 {
+    background: linear-gradient(to bottom right, rgba(100, 100, 255, 0.8), rgba(0, 0, 255, 0.8)); /* Gradient color */
+    border-radius: 15px; /* Rounded corners */
+    width: 3in; /* Box width */
+    height: 3in; /* Box height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white; /* Text color */
+    font-size: 1.5rem; /* Text size */
+    text-decoration: none; /* Remove underline from links */
+    position: relative; /* For hover effect */
+    overflow: hidden; /* Hide overflow for the fade effect */
+    transition: background 1.5s ease; /* Smooth transition for background */
+}
+
+
+
+.box6 {
+    background: linear-gradient(to bottom right, rgba(100, 100, 255, 0.8), rgba(0, 0, 255, 0.8)); /* Gradient color */
+    border-radius: 15px; /* Rounded corners */
+    width: 3in; /* Box width */
+    height: 3in; /* Box height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white; /* Text color */
+    font-size: 1.5rem; /* Text size */
+    text-decoration: none; /* Remove underline from links */
+    position: relative; /* For hover effect */
+    overflow: hidden; /* Hide overflow for the fade effect */
+    transition: background 1.5s ease; /* Smooth transition for background */
+}
+
+
+
+.box7 {
+    background: linear-gradient(to bottom right, rgba(100, 100, 255, 0.8), rgba(0, 0, 255, 0.8)); /* Gradient color */
+    border-radius: 15px; /* Rounded corners */
+    width: 3in; /* Box width */
+    height: 3in; /* Box height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white; /* Text color */
+    font-size: 1.5rem; /* Text size */
+    text-decoration: none; /* Remove underline from links */
+    position: relative; /* For hover effect */
+    overflow: hidden; /* Hide overflow for the fade effect */
+    transition: background 1.5s ease; /* Smooth transition for background */
+}
+
+
+
+.box8 {
+    background: linear-gradient(to bottom right, rgba(100, 100, 255, 0.8), rgba(0, 0, 255, 0.8)); /* Gradient color */
+    border-radius: 15px; /* Rounded corners */
+    width: 3in; /* Box width */
+    height: 3in; /* Box height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white; /* Text color */
+    font-size: 1.5rem; /* Text size */
+    text-decoration: none; /* Remove underline from links */
+    position: relative; /* For hover effect */
+    overflow: hidden; /* Hide overflow for the fade effect */
+    transition: background 1.5s ease; /* Smooth transition for background */
+}
+
+
+.box9 {
+    background: linear-gradient(to bottom right, rgba(100, 100, 255, 0.8), rgba(0, 0, 255, 0.8)); /* Gradient color */
+    border-radius: 15px; /* Rounded corners */
+    width: 3in; /* Box width */
+    height: 3in; /* Box height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white; /* Text color */
+    font-size: 1.5rem; /* Text size */
+    text-decoration: none; /* Remove underline from links */
+    position: relative; /* For hover effect */
+    overflow: hidden; /* Hide overflow for the fade effect */
+    transition: background 1.5s ease; /* Smooth transition for background */
+}
+
+
+.box10 {
+    background: linear-gradient(to bottom right, rgba(100, 100, 255, 0.8), rgba(0, 0, 255, 0.8)); /* Gradient color */
+    border-radius: 15px; /* Rounded corners */
+    width: 3in; /* Box width */
+    height: 3in; /* Box height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white; /* Text color */
+    font-size: 1.5rem; /* Text size */
+    text-decoration: none; /* Remove underline from links */
+    position: relative; /* For hover effect */
+    overflow: hidden; /* Hide overflow for the fade effect */
+    transition: background 1.5s ease; /* Smooth transition for background */
+}
+
+
+.box11 {
+    background: linear-gradient(to bottom right, rgba(100, 100, 255, 0.8), rgba(0, 0, 255, 0.8)); /* Gradient color */
+    border-radius: 15px; /* Rounded corners */
+    width: 3in; /* Box width */
+    height: 3in; /* Box height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white; /* Text color */
+    font-size: 1.5rem; /* Text size */
+    text-decoration: none; /* Remove underline from links */
+    position: relative; /* For hover effect */
+    overflow: hidden; /* Hide overflow for the fade effect */
+    transition: background 1.5s ease; /* Smooth transition for background */
+}
+
+
+.box12 {
+    background: linear-gradient(to bottom right, rgba(100, 100, 255, 0.8), rgba(0, 0, 255, 0.8)); /* Gradient color */
+    border-radius: 15px; /* Rounded corners */
+    width: 3in; /* Box width */
+    height: 3in; /* Box height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white; /* Text color */
+    font-size: 1.5rem; /* Text size */
+    text-decoration: none; /* Remove underline from links */
+    position: relative; /* For hover effect */
+    overflow: hidden; /* Hide overflow for the fade effect */
+    transition: background 1.5s ease; /* Smooth transition for background */
+}
+
+
+.box1:hover {
+    background: transparent; /* Reveal text on hover */
+}
+
+.box1 a {
+    color: white; /* Text color */
+    text-decoration: none; /* Remove underline from links */
+    opacity: 0; /* Start hidden */
+    transition: opacity 1.5s ease; /* Smooth transition for text */
+    position: absolute; /* Position text absolutely */
+}
+
+.box1:hover a {
+    opacity: 1; /* Show text on hover */
+}
+
+
+.box2:hover {
+    background: transparent; /* Reveal text on hover */
+}
+
+.box2 a {
+    color: white; /* Text color */
+    text-decoration: none; /* Remove underline from links */
+    opacity: 0; /* Start hidden */
+    transition: opacity 1.5s ease; /* Smooth transition for text */
+    position: absolute; /* Position text absolutely */
+}
+
+.box2:hover a {
+    opacity: 1; /* Show text on hover */
+}
+
+.box3:hover {
+    background: transparent; /* Reveal text on hover */
+}
+
+.box3 a {
+    color: white; /* Text color */
+    text-decoration: none; /* Remove underline from links */
+    opacity: 0; /* Start hidden */
+    transition: opacity 1.5s ease; /* Smooth transition for text */
+    position: absolute; /* Position text absolutely */
+}
+
+.box3:hover a {
+    opacity: 1; /* Show text on hover */
+}
+
+.box4:hover {
+    background: transparent; /* Reveal text on hover */
+}
+
+.box4 a {
+    color: white; /* Text color */
+    text-decoration: none; /* Remove underline from links */
+    opacity: 0; /* Start hidden */
+    transition: opacity 1.5s ease; /* Smooth transition for text */
+    position: absolute; /* Position text absolutely */
+}
+
+.box4:hover a {
+    opacity: 1; /* Show text on hover */
+}
+
+.box5:hover {
+    background: transparent; /* Reveal text on hover */
+}
+
+.box5 a {
+    color: white; /* Text color */
+    text-decoration: none; /* Remove underline from links */
+    opacity: 0; /* Start hidden */
+    transition: opacity 1.5s ease; /* Smooth transition for text */
+    position: absolute; /* Position text absolutely */
+}
+
+.box5:hover a {
+    opacity: 1; /* Show text on hover */
+}
+
+.box6:hover {
+    background: transparent; /* Reveal text on hover */
+}
+
+.box6 a {
+    color: white; /* Text color */
+    text-decoration: none; /* Remove underline from links */
+    opacity: 0; /* Start hidden */
+    transition: opacity 1.5s ease; /* Smooth transition for text */
+    position: absolute; /* Position text absolutely */
+}
+
+.box6:hover a {
+    opacity: 1; /* Show text on hover */
+}
+
+.box7:hover {
+    background: transparent; /* Reveal text on hover */
+}
+
+.box7 a {
+    color: white; /* Text color */
+    text-decoration: none; /* Remove underline from links */
+    opacity: 0; /* Start hidden */
+    transition: opacity 1.5s ease; /* Smooth transition for text */
+    position: absolute; /* Position text absolutely */
+}
+
+.box7:hover a {
+    opacity: 1; /* Show text on hover */
+}
+
+.box8:hover {
+    background: transparent; /* Reveal text on hover */
+}
+
+.box8 a {
+    color: white; /* Text color */
+    text-decoration: none; /* Remove underline from links */
+    opacity: 0; /* Start hidden */
+    transition: opacity 1.5s ease; /* Smooth transition for text */
+    position: absolute; /* Position text absolutely */
+}
+
+.box8:hover a {
+    opacity: 1; /* Show text on hover */
+}
+
+.box9:hover {
+    background: transparent; /* Reveal text on hover */
+}
+
+.box9 a {
+    color: white; /* Text color */
+    text-decoration: none; /* Remove underline from links */
+    opacity: 0; /* Start hidden */
+    transition: opacity 1.5s ease; /* Smooth transition for text */
+    position: absolute; /* Position text absolutely */
+}
+
+.box9:hover a {
+    opacity: 1; /* Show text on hover */
+}
+
+.box10:hover {
+    background: transparent; /* Reveal text on hover */
+}
+
+.box10 a {
+    color: white; /* Text color */
+    text-decoration: none; /* Remove underline from links */
+    opacity: 0; /* Start hidden */
+    transition: opacity 1.5s ease; /* Smooth transition for text */
+    position: absolute; /* Position text absolutely */
+}
+
+.box10:hover a {
+    opacity: 1; /* Show text on hover */
+}
+
+.box11:hover {
+    background: transparent; /* Reveal text on hover */
+}
+
+.box11 a {
+    color: white; /* Text color */
+    text-decoration: none; /* Remove underline from links */
+    opacity: 0; /* Start hidden */
+    transition: opacity 1.5s ease; /* Smooth transition for text */
+    position: absolute; /* Position text absolutely */
+}
+
+.box11:hover a {
+    opacity: 1; /* Show text on hover */
+}
+
+
+.box12:hover {
+    background: transparent; /* Reveal text on hover */
+}
+
+.box12 a {
+    color: white; /* Text color */
+    text-decoration: none; /* Remove underline from links */
+    opacity: 0; /* Start hidden */
+    transition: opacity 1.5s ease; /* Smooth transition for text */
+    position: absolute; /* Position text absolutely */
+}
+
+.box12:hover a {
+    opacity: 1; /* Show text on hover */
+}
+
+    </style>
+</head>
+
+
+    <div class="top-margin"></div>
+    <div class="bottom-margin"></div>
+    <div class="container">
+        <div class="box1"><a href="Java Introduction - Dashboard.html">Introduction</a></div>
+        <div class="box2"><a href="Java Fundamentals - Dashboard.html">Fundamentals</a></div>
+        <div class="box3"><a href="Java Arrays - Dashboard.html">Arrays</a></div>
+        <div class="box4"><a href="Java Flow Control - Dashboard.html">Flow Control</a></div>
+        <div class="box5"><a href="Java OOP - Dashboard.html">OOP</a></div>
+        <div class="box6"><a href="https://java-l.gitbook.io/java.l-documentation/">Git Documentation</a></div>
+        <div class="bottom-margin"></div>
+    </div>
+
+   

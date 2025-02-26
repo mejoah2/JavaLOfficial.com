@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JAVAL - Introduction Dashboard</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f5f5f5;
+            color: #333;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .container {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            max-width: 400px;
+            width: 100%;
+            text-align: center;
+        }
+        h1 {
+            font-size: 24px;
+            margin-bottom: 20px;
+            color: #333;
+        }
+        .accordion {
+            text-align: left;
+        }
+        .accordion-item {
+            margin-bottom: 10px;
+        }
+        .accordion-header {
+            font-size: 18px;
+            cursor: pointer;
+            padding: 10px;
+            background-color: #333;
+            color: #fff;
+            border-radius: 4px;
+            transition: background-color 0.3s ease;
+        }
+        .accordion-header:hover {
+            background-color: #555;
+        }
+        .accordion-content {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.5s ease, padding 0.5s ease;
+            padding: 0 10px;
+            border: 1px solid #ddd;
+            border-top: none;
+            border-radius: 0 0 4px 4px;
+        }
+        .accordion-content ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        .accordion-content li {
+            margin: 5px 0;
+        }
+        .accordion-content a {
+            color: #333;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        .accordion-content a:hover {
+            color: #aa3131;
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>JAVA.L</h1>
+        <div class="accordion">
+            <div class="accordion-item">
+                <h2 class="accordion-header" onclick="toggleAccordion('intro')">Java Flow Control</h2>
+                <div class="accordion-content" id="intro">
+                    <ul>
+                        <li><a href="new shit/java-if-else-statements-minimalist3/index.html">If...Else Statements</a></li>
+                        <li><a href="">For Loops</a></li>
+                        <li><a href="new shit/java-for-each-loops-minimalist3/index.html">For-Each Loops</a></li>
+                        <li><a href="new shit/java-for-each-loops-minimalist3/index.html">While and Do...While Loops</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        function toggleAccordion(id) {
+            var content = document.getElementById(id);
+            if (content.style.maxHeight) {
+                content.style.maxHeight = null;
+                content.style.padding = "0 10px";
+            } else {
+                content.style.maxHeight = content.scrollHeight + "px";
+                content.style.padding = "10px";
+            }
+        }
+    </script>
+</body>
+</html>
